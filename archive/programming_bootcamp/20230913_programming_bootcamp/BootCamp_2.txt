@@ -1,0 +1,41 @@
+USE buyhouse2;
+
+ /* SELECT * FROM staff; */
+ 
+ /* SELECT SNo, fName, lName, Salary FROM Staff WHERE Salary > 10000; */
+ 
+ /* List the number of all branches */
+ 
+ /* SELECT Bno FROM Branch; */
+ 
+ /* SELECT Sno, fName, lName, Salary/12 AS monthlysalary FROM Staff WHERE Salary/12 < 1000; */ 
+ 
+ /* List the Sno, first and last name of employees whose monthlysalary is less than 1000 */
+ 
+ /* List addresses of all branch offices in London or Glasgow */
+ 
+ /* SELECT Bno, Street, City, Area, Pcode FROM branch WHERE city = 'London' OR city = 'Glasgow'; */
+ 
+ /* Find all owners living in Glasgow */
+ 
+ /* SELECT Ono, fname, lname, address, Tel_No FROM Owner WHERE address NOT LIKE '%Glasgow%'; */
+ 
+ /* SELECT Type, Pno, Rooms, rent FROM property_for_rent ORDER BY Type DESC; */
+ 
+ /* Aggregate Functions */
+ 
+ /* SELECT COUNT(salary) FROM Staff; */ 
+ 
+/* SELECT position, COUNT(salary) FROM Staff GROUP BY position;*/
+
+/* How many properties cost more than 350 pounds per month to rent? */
+  
+/* SELECT Type, COUNT(*) AS myCount FROM property_for_rent WHERE rent > 350; */ 
+
+/* How many different properties viewed between May 13 1995 to May 30 1995*/
+ 
+/* SELECT COUNT(Pno) FROM Viewing WHERE Date BETWEEN '1995-05-13' AND '1995-05-30'; */
+
+/*  Find the minimum, maximum and average salary of the staff members */
+ 
+ /* SELECT MIN(salary) AS myMin, MAX(salary) as myMax, AVG(salary) as myAvg FROM Staff; */
